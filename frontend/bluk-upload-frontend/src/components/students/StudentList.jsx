@@ -5,7 +5,7 @@ import { ErrorMessage } from '../common/ErrorMessage';
 import { fetchStudents } from '../../services/api';
 import { PaginationControls } from '../common/PaginationControls';
 
-const StudentList = () => {
+const StudentList = ({refresh}) => {
   const [students, setStudents] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
