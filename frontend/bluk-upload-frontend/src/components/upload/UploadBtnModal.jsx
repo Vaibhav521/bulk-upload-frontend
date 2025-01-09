@@ -54,13 +54,16 @@ function UploadBtnModal() {
             {isOpen && (
                 <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
                     <div className="w-full max-w-[550px] bg-white p-6 rounded-md">
-                        <button onClick={toggleModal} className="absolute top-2 right-2 text-gray-500">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fillRule="evenodd" clipRule="evenodd"
-                                    d="M6.225 4.811a1 1 0 011.414 0L12 9.172l4.361-4.361a1 1 0 111.414 1.414L13.414 10.586l4.361 4.361a1 1 0 01-1.414 1.414L12 12.414l-4.361 4.361a1 1 0 01-1.414-1.414l4.361-4.361-4.361-4.361a1 1 0 010-1.414z"
-                                    fill="currentColor" />
-                            </svg>
-                        </button>
+                        <div className="flex justify-end">
+                            <button onClick={toggleModal} className="text-gray-500">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd" clipRule="evenodd"
+                                        d="M6.225 4.811a1 1 0 011.414 0L12 9.172l4.361-4.361a1 1 0 111.414 1.414L13.414 10.586l4.361 4.361a1 1 0 01-1.414 1.414L12 12.414l-4.361 4.361a1 1 0 01-1.414-1.414l4.361-4.361-4.361-4.361a1 1 0 010-1.414z"
+                                        fill="currentColor" />
+                                </svg>
+                    
+                            </button>
+                        </div>
                         <form className="space-y-4" onSubmit={handleSendFile}>
                             <div>
                                 <label className="block text-base font-medium text-gray-700 pb-2">
